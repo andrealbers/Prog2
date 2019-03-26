@@ -1,0 +1,7 @@
+﻿  kmath.c
+x:\albers_andre\praktikum\2. semester\aufg2\aufg2\kmath.c(26): warning C4101: "z": Unreferenzierte lokale Variable
+x:\albers_andre\praktikum\2. semester\aufg2\aufg2\kmath.c(8): warning C4716: "add": Muss einen Wert zurückgeben
+x:\albers_andre\praktikum\2. semester\aufg2\aufg2\kmath.c(22): warning C4716: "mul": Muss einen Wert zurückgeben
+x:\albers_andre\praktikum\2. semester\aufg2\aufg2\kmath.c(28): warning C4716: "divi": Muss einen Wert zurückgeben
+  aufg2.vcxproj -> X:\Albers_Andre\Praktikum\2. Semester\aufg2\Debug\aufg2.exe
+  aufg2.vcxproj -> X:\Albers_Andre\Praktikum\2. Semester\aufg2\Debug\aufg2.pdb (Partial PDB)
