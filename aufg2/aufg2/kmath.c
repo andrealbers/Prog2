@@ -8,11 +8,11 @@ struct komplex add(struct komplex summand1, struct komplex summand2)
 	return z;
 }
 
-void sub(struct komplex minuend, struct komplex subtrahend, struct komplex *differenzwert)
+void sub(struct komplex minuend, struct komplex subtrahend, struct komplex *erg)
 {
-	struct komplex z;
-	z.real = minuend.real - subtrahend.real;
-	z.imag = minuend.imag - subtrahend.imag;
+	erg->real = minuend.real - subtrahend.real;
+	erg->imag = minuend.imag - subtrahend.imag;
+	
 }
 
 struct komplex mul(struct komplex multiplikant, struct komplex multiplikator)
