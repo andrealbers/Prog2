@@ -1,13 +1,4 @@
 ﻿  main.c
-x:\albers_andre\praktikum\2. semester\aufg2\aufg2\main.c(19): warning C4047: "Funktion": Anzahl der Dereferenzierungen bei "char" und "char [9]" unterschiedlich
-x:\albers_andre\praktikum\2. semester\aufg2\aufg2\main.c(19): warning C4024: "ausgabe": unterschiedliche Typen für formalen und übergebenen Parameter 2
-x:\albers_andre\praktikum\2. semester\aufg2\aufg2\main.c(22): warning C4047: "Funktion": Anzahl der Dereferenzierungen bei "char" und "char [12]" unterschiedlich
-x:\albers_andre\praktikum\2. semester\aufg2\aufg2\main.c(22): warning C4024: "ausgabe": unterschiedliche Typen für formalen und übergebenen Parameter 2
-x:\albers_andre\praktikum\2. semester\aufg2\aufg2\main.c(25): warning C4047: "Funktion": Anzahl der Dereferenzierungen bei "char" und "char [15]" unterschiedlich
-x:\albers_andre\praktikum\2. semester\aufg2\aufg2\main.c(25): warning C4024: "ausgabe": unterschiedliche Typen für formalen und übergebenen Parameter 2
 x:\albers_andre\praktikum\2. semester\aufg2\aufg2\main.c(29): warning C4013: "system" undefiniert; Annahme: extern mit Rückgabetyp int
-x:\albers_andre\praktikum\2. semester\aufg2\aufg2\main.c(30): warning C4098: "main": "void"-Funktion gibt einen Wert zurück
-x:\albers_andre\praktikum\2. semester\aufg2\aufg2\main.c(34): warning C4047: "Funktion": Anzahl der Dereferenzierungen bei "char" und "char [9]" unterschiedlich
-x:\albers_andre\praktikum\2. semester\aufg2\aufg2\main.c(34): warning C4024: "ausgabe": unterschiedliche Typen für formalen und übergebenen Parameter 2
   aufg2.vcxproj -> X:\Albers_Andre\Praktikum\2. Semester\aufg2\Debug\aufg2.exe
   aufg2.vcxproj -> X:\Albers_Andre\Praktikum\2. Semester\aufg2\Debug\aufg2.pdb (Partial PDB)

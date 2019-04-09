@@ -4,7 +4,7 @@
 #include "kmath.h"
 
 
-void main(void)
+int main(void)
 {
 	struct komplex a, b, erg;
 
@@ -27,12 +27,13 @@ void main(void)
 	if ((b.real && b.imag) == 0) {
 		printf("Division abgebrochen! Divisor ist 0!\n\n");
 		system("PAUSE");
-		return 0;
+		return -1;
 	}
-
+	
 	erg = divi(a, b);
 	ausgabe(&erg, "Division");
-
+	
 	system("PAUSE");
+	return 0;
 }
 
