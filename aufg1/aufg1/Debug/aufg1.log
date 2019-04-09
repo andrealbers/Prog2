@@ -1,0 +1,3 @@
+﻿  main.c
+x:\albers_andre\praktikum\2. semester\aufg1\aufg1\main.c(24): warning C4244: "Funktion": Konvertierung von "int" in "float", möglicher Datenverlust
+x:\albers_andre\praktikum\2. semester\aufg1\aufg1\main.c(40): error C2296: "%": Ungültig, da der linke Operand vom Typ "float" ist
