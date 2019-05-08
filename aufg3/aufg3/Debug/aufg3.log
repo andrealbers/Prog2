@@ -1,0 +1,7 @@
+﻿  main.c
+x:\albers_andre\praktikum\2. semester\aufg3\aufg3\main.c(16): warning C4013: "eingabe" undefiniert; Annahme: extern mit Rückgabetyp int
+x:\albers_andre\praktikum\2. semester\aufg3\aufg3\main.c(34): warning C4047: "!=": Anzahl der Dereferenzierungen bei "::size_t" und "void *" unterschiedlich
+x:\albers_andre\praktikum\2. semester\aufg3\aufg3\main.c(11): warning C4101: "Zahl2": Unreferenzierte lokale Variable
+x:\albers_andre\praktikum\2. semester\aufg3\aufg3\main.c(12): warning C4101: "Zahl3": Unreferenzierte lokale Variable
+  aufg3.vcxproj -> X:\Albers_Andre\Praktikum\2. Semester\aufg3\Debug\aufg3.exe
+  aufg3.vcxproj -> X:\Albers_Andre\Praktikum\2. Semester\aufg3\Debug\aufg3.pdb (Partial PDB)
