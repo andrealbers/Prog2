@@ -1,0 +1,6 @@
+﻿  main.cpp
+x:\albers_andre\praktikum\2. semester\aufg5_1\aufg5_1\main.cpp(5): warning C4067: Unerwartete Token nach Präprozessordirektive - Zeilenvorschub erwartet.
+x:\albers_andre\praktikum\2. semester\aufg5_1\aufg5_1\main.cpp(6): warning C4067: Unerwartete Token nach Präprozessordirektive - Zeilenvorschub erwartet.
+x:\albers_andre\praktikum\2. semester\aufg5_1\aufg5_1\main.cpp(7): warning C4067: Unerwartete Token nach Präprozessordirektive - Zeilenvorschub erwartet.
+  aufg5_1.vcxproj -> X:\Albers_Andre\Praktikum\2. Semester\aufg5_1\Debug\aufg5_1.exe
+  aufg5_1.vcxproj -> X:\Albers_Andre\Praktikum\2. Semester\aufg5_1\Debug\aufg5_1.pdb (Partial PDB)
