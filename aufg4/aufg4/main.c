@@ -16,7 +16,8 @@ und brechen das Programm ab.
 
 void fehlermeldungen(int fehlerid);
 
-int main(int argc, char **argv) {
+int main(int argc, char **argv)
+{
 	int anzparameter = argc;
 	unsigned char c;
 	char befehl = argv[1][1];
@@ -24,56 +25,58 @@ int main(int argc, char **argv) {
 
 	FILE *fp;
 
-	if (anzparameter != 3) {
+	if (anzparameter != 3)
+	{
 		fehlermeldungen(-1);
 		return -1;
 	}
 
 	fp = fopen(pfad, "rb");
 
-	if (fp == NULL) {
+	if (fp == NULL)
+	{
 		fehlermeldungen(-2);
 		return -2;
 	}
 
-	while ((fread(&c, sizeof(char), 1, fp)) != NULL) {
-		switch (befehl) {
+	int count = -1;
+
+	while ((fread(&c, sizeof(char), 1, fp)))
+	{
+		count++;
+		if (count == 16)
+		{
+			printf("\n");
+			count = 0;
+		}
+
+		switch (befehl)
+		{
 		case 'h':
-			firgendwas
-			for (int k = 0; k <= ftell(fp); k++) {
-				for (int i = 0; i < 16; i++, c++) {
-					printf("%X ", c);
-				}
-				printf("\n");
-			}
+			printf("%3X", c);
 			break;
 
 		case 'o':
-			printf("%o", c);
+			printf("%3o ", c);
 			break;
 
 		case 'd':
-			for (int k = 0; k <= ftell(fp); k++) {
-				for (int i = 0; i < 16; i++) {
-					printf("%03i ", c);
-				}
-				printf("\n");
-			}
+			printf("%3i ", c);
+			break;
 		}
 	}
 
-	
 	printf("\n\n");
 	system("PAUSE");
-
-
 }
 
 
 
 
-void fehlermeldungen(int fehlerid) {
-	switch (fehlerid) {
+void fehlermeldungen(int fehlerid)
+{
+	switch (fehlerid)
+	{
 	case -1:
 		printf("Fehler: Anzahl Parameter != 3");
 		break;

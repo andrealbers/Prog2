@@ -1,4 +1,3 @@
 ﻿  main.c
-x:\albers_andre\praktikum\2. semester\aufg4\aufg4\main.c(39): warning C4047: "!=": Anzahl der Dereferenzierungen bei "::size_t" und "void *" unterschiedlich
   aufg4.vcxproj -> X:\Albers_Andre\Praktikum\2. Semester\aufg4\Debug\aufg4.exe
   aufg4.vcxproj -> X:\Albers_Andre\Praktikum\2. Semester\aufg4\Debug\aufg4.pdb (Partial PDB)
