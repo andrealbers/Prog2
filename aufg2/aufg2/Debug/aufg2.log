@@ -1,4 +1,0 @@
-﻿  main.c
-x:\albers_andre\praktikum\2. semester\aufg2\aufg2\main.c(29): warning C4013: "system" undefiniert; Annahme: extern mit Rückgabetyp int
-  aufg2.vcxproj -> X:\Albers_Andre\Praktikum\2. Semester\aufg2\Debug\aufg2.exe
-  aufg2.vcxproj -> X:\Albers_Andre\Praktikum\2. Semester\aufg2\Debug\aufg2.pdb (Partial PDB)
