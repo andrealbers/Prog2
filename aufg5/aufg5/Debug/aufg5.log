@@ -1,0 +1,7 @@
+﻿  main.cpp
+x:\albers_andre\praktikum\2. semester\aufg5\aufg5\main.cpp(1): warning C4067: Unerwartete Token nach Präprozessordirektive - Zeilenvorschub erwartet.
+x:\albers_andre\praktikum\2. semester\aufg5\aufg5\main.cpp(2): warning C4067: Unerwartete Token nach Präprozessordirektive - Zeilenvorschub erwartet.
+x:\albers_andre\praktikum\2. semester\aufg5\aufg5\main.cpp(3): warning C4067: Unerwartete Token nach Präprozessordirektive - Zeilenvorschub erwartet.
+x:\albers_andre\praktikum\2. semester\aufg5\aufg5\main.cpp(56): warning C4715: "zahl::ausgabe": Nicht alle Codepfade geben einen Wert zurück.
+  aufg5.vcxproj -> X:\Albers_Andre\Praktikum\2. Semester\aufg5\Debug\aufg5.exe
+  aufg5.vcxproj -> X:\Albers_Andre\Praktikum\2. Semester\aufg5\Debug\aufg5.pdb (Partial PDB)
