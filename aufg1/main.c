@@ -1,11 +1,11 @@
 /*
-Entwickeln Sie ein strukturiertes und gut kommentieretes Programm für nachstehende Aufgabenstellung:
-Für eine von der Tastatur einzugebende vorzeichenlose Dezimalzahl im Wertebereich
-0 <= Zahl <= 65535 ist die zugehörige hexadezimale Zahl programmtechnisch
-(also nicht durch die bloße Anwendung entsprechender Formatanweisungen in der "printf"-Funktion) zu ermitteln und auszugeben.
+Entwickeln Sie ein strukturiertes und gut kommentieretes Programm fÃ¼r nachstehende Aufgabenstellung:
+FÃ¼r eine von der Tastatur einzugebende vorzeichenlose Dezimalzahl im Wertebereich
+0 <= Zahl <= 65535 ist die zugehÃ¶rige hexadezimale Zahl programmtechnisch
+(also nicht durch die bloÃŸe Anwendung entsprechender Formatanweisungen in der "printf"-Funktion) zu ermitteln und auszugeben.
 Beispiel: 65534 (dezimal) FFFE (hex)
 Beachten Sie bei der Realisierung folgende Eckpunkte:
-1. Erzeugen Sie ein übersichtliches Ausgabeformat.
+1. Erzeugen Sie ein Ã¼bersichtliches Ausgabeformat.
 2. Verwenden Sie das Verfahren der Rekursion
 */
 #define _CRT_SECURE_NO_WARNINGS 1
@@ -40,7 +40,7 @@ int main(void) {
 	printf("\nDie Zahl %d in Hex ist:\n", eingegeben);
 
 	for (anz--; anz >= 0; anz--) {
-		printf("%X", *(erg + anz));
+		printf("%X", *(erg + anz));   //Switch-Case...
 	}
 	
 	printf("\n\n");
