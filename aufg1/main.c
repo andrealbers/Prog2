@@ -9,35 +9,40 @@ Beachten Sie bei der Realisierung folgende Eckpunkte:
 2. Verwenden Sie das Verfahren der Rekursion
 */
 #define _CRT_SECURE_NO_WARNINGS 1
-
 #include <stdlib.h>
 #include <stdio.h>
 
-void eingabe(int *eingegeben);
-void hexberech(float umrechnen);
+int eingabe() {
+	int eingegeb;
+	do {
+		printf("Bitte Zahl eingeben!\n");
+		scanf("%d", &eingegeb);
+	} while ((eingegeb < 0) || (eingegeb > 65535));
+	return eingegeb;
+}
 
-int main()
-{
-	int dezimalzahl;
+int umrechnen(int umrech, int i, int *ergebnis) {
+	int rest = (umrech % 16);
+	umrech = umrech / 16;
 
-	eingabe(&dezimalzahl);
-	hexberech(dezimalzahl);
+	*(ergebnis + i) = rest;
+	i++;
 
+	if (umrech != 0) umrechnen(umrech, i, ergebnis);
+	else return i;
+}
+
+int main(void) {
+	int erg[4];
+	int eingegeben = eingabe();
+	int anz = umrechnen(eingegeben, 0, erg);
+
+	printf("\nDie Zahl %d in Hex ist:\n", eingegeben);
+
+	for (anz--; anz >= 0; anz--) {
+		printf("%X", *(erg + anz));
+	}
+	
 	printf("\n\n");
 	system("PAUSE");
-	return 0;
-}
-
-void eingabe(int *eingegeben)
-{
-	printf("Bitte geben Sie eine Dezimalzahl ein 0<=x<=65535:\n");
-	scanf("%d", eingegeben);
-}
-
-void hexberech(float umrechnen)
-{
-	float rest;
-	rest = umrechnen / 2;
-	printf("%f", rest);
-
 }
