@@ -1,42 +1,51 @@
 #define _CRT_SECURE_NO_WARNINGS 1
-#include <stdio.h>
 #include <stdlib.h>
-#include "ki.h"
+#include <stdio.h>
 #include "kstruct.h"
-#include "data.h"
+#include "kio.h"
+#include "save.h"
 
-void main() {
+int main(void) {
 	FILE *fp;
-	struct komplex Zahl1;
-	struct komplex Zahl2;
-	struct komplex Zahl3;
-	struct komplex ergebnis;
+	int op;
+	struct komplex k1, k2, k3, k4;
+	printf("Erste Komplexe Zahl:\n");
+	eingabe(&k1);
+	printf("\nZweite Komplexe Zahl:\n");
+	eingabe(&k2);
+	printf("\nDritte Komplexe Zahl:\n");
+	eingabe(&k3);
 	
-	printf("Erste Zahl:\n");
-	eingabe(&Zahl1);
-	/*	printf("\nZweite Zahl:\n");
-	eingabe(&Zahl2);
-	printf("\nDritte Zahl:\n");
-	eingabe(&Zahl3);
-	*/
-	if ((fp = fopen("ablage.bin", "wb+")) == 0) {
+	if ((fp = fopen("test.txt", "r+")) != NULL) {
+		//ZAHLEN SPEICHERN
+		save(fp, &k1);
+		save(fp, &k2);
+		save(fp, &k3);
+		//ZAHL AUSGEBEN
+		printf("Welche Zahl ausgeben? 1-3\n");
+		scanf("%d", &op);
+		read(fp, op);
+		//ZAHL AENDERN
+		printf("\n\nWelche Zahl aendern? 0 - Keine, 1-3\n");
+		scanf("%d", &op);
+		printf("\nNeu\nRealteil: ");
+		scanf("%lf", &k4.real);
+		printf("Imaginaerteil: ");
+		scanf("%lf", &k4.imag);
+		edit(fp, op, &k4);
+		//ZAHLEN ERNEUT AUSGEBEN
+		printf("\nNeue Zahlen:\n");
+		read(fp, 1);
+		printf("\n");
+		read(fp, 2);
+		printf("\n");
+		read(fp, 3);
 
-		printf("\n\nDatei konnte nicht geoeffnet werden!\n");
+		fclose(fp);
 	}
+	else printf("Fehler beim Oeffnen der Datei!");
+	
 
-	else {
-		printf("\nDie Datei konnte geoeffnet werden\n");
-		ksave(fp, &Zahl1);
-		printf("Zahl1 wurde gespeichert!\n");
-		
-		fseek(fp, 0, SEEK_SET);
-
-		while ((fread(&ergebnis, sizeof(struct komplex), 1, fp)) != NULL) {
-			printf("Realteil: %lf\n", ergebnis.real);	
-			printf("Imaginaerteil: %lf", ergebnis.imag);
-		}
-	}
-
-	fclose(fp);
 	printf("\n\n");
+	system("PAUSE");
 }
